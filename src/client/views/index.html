@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Ziqi's Travel App</title>
+</head>
+
+
+<body>
+ <nav>
+    <input type="checkbox" id = "check">
+    <label for="check" class = "checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class = "logo"><img src="../media/logo.png" alt="logo"></label>
+    <ul>
+        <li><a class = "active" href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">feedback</a></li>
+    </ul>
+ </nav>
+    <section class = container>
+    <section class="main" >
+        
+        <h1>Start your trip:</h1>
+        <div class = "form">
+          <div class = "city">
+            <label for="city"> YOUR DESTIONATION</label>
+            <input id="city" type="text" name="input" value=""  placeholder="example:Tokyo" required>
+          </div>
+          <div class = "startDate">
+            <label for="startDate">Start Date </label>
+            <input id="startDate"  type="date"  name="start" required>
+          </div>
+          <div class = "returnDate"> 
+            <label for="returnDate">Return Date </label>
+            <input id="returnDate"  type="date"  name="end"  required >
+          </div>
+            <input id="submittrip" value="Go" type="submit" >
+            
+        
+        </div>
+    </section>
+    <!-- Trip Summary section  -->
+    <section class="result">
+        <h3>Destination details:</h3>
+        <div class = result-form>
+        <p id="destination"></p>
+        <p id="duration" ></p>
+        <p id="countdown" ></p>
+        <p id="weather"></p>
+        <img id="picture" src="" alt="">
+        </div>
+    </section>
+    </section>
+
+
+    <div class = footer>
+        <div class="footer-container">
+             <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
+                </ul>
+
+            </div>
+
+             <div class="contact-info">
+                 <div class="contact-content">
+                    <h3>Contact us</h3>
+                    <ul>
+                       <li><i class="fas fa-phone-square-alt "></i> (+61) 1234 5678</li>
+                       <li><i class="far fa-envelope "></i> info@travelplan.com.au</li>
+                   </ul>
+
+                </div>
+             </div>
+
+             <div class="copyright-text">
+                <p>Copyright © 2021 ~ Ziqi Wang. All Rights Reserved.</p>
+             </div>
+
+        </div>
+    
+     </div>
+
+     <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
+       
+    
+</body>
+</html>
