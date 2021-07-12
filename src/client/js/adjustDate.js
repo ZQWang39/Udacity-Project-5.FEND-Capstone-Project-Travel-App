@@ -1,7 +1,7 @@
 
 
 export function minDate(e){
-    e.preventDefault()
+    //e.preventDefault()
    
     let today = new Date();
     
@@ -13,10 +13,10 @@ export function minDate(e){
     if(day < 10)
         day = '0' + day.toString();
     
-   let minDate =  year + '-' + month + '-' + day ;
+   let date =  year + '-' + month + '-' + day ;
+ 
+   document.getElementById('startDate').setAttribute('min', date);
+   document.getElementById('returnDate').setAttribute('min', date);
    
-   
-document.getElementById('startDate').setAttribute('min', minDate);
-document.getElementById('returnDate').setAttribute('min', minDate);
 
 };
