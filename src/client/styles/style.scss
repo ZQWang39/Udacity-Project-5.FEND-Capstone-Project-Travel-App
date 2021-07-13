@@ -18,7 +18,6 @@ body {
 }
 
 
-
 nav{
     background: $background-color; 
     height:80px;
@@ -119,10 +118,6 @@ nav {
 }
 
 
- 
-
- 
-
  .city,.startDate,.returnDate{
      margin-top:35px;
      margin-left: 30px;
@@ -140,6 +135,7 @@ nav {
      float: right;
      width: 80px;
      height:35px;
+     font-size: 18px;
      margin-top: 30px;
      margin-right: 30px;
      border:none;
@@ -148,11 +144,9 @@ nav {
      color: $text-color;
      cursor: pointer;
      &:hover{
-        background: purple;
+        background: rgb(83, 3, 83);
     }
  }
-
-
  
 
  .footer{
